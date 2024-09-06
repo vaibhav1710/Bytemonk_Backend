@@ -1,0 +1,562 @@
+2024-09-06 11:41:18 INFO Starting ByteMonkAssignmentApplication using Java 22.0.1 with PID 19500 (C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes started by Asus in C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment)
+2024-09-06 11:41:18 INFO No active profile set, falling back to 1 default profile: "default"
+2024-09-06 11:41:19 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06 11:41:19 INFO Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-09-06 11:41:20 INFO Tomcat initialized with port 8080 (http)
+2024-09-06 11:41:20 INFO Starting service [Tomcat]
+2024-09-06 11:41:20 INFO Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06 11:41:20 INFO Initializing Spring embedded WebApplicationContext
+2024-09-06 11:41:20 INFO Root WebApplicationContext: initialization completed in 2207 ms
+2024-09-06 11:41:20 INFO HikariPool-1 - Starting...
+2024-09-06 11:41:21 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ADMIN
+2024-09-06 11:41:21 INFO HikariPool-1 - Start completed.
+2024-09-06 11:41:21 INFO H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-06 11:41:21 TRACE Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2024-09-06 11:41:21 TRACE Added existing Servlet initializer bean 'h2Console'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]
+2024-09-06 11:41:21 TRACE Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2024-09-06 11:41:21 TRACE Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2024-09-06 11:41:21 TRACE Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2024-09-06 11:41:21 TRACE Created Filter initializer for bean 'requestLoggingFilter'; order=2147483647, resource=file [C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes\com\gaurang\ByteMonk_Assignment\filter\RequestLoggingFilter.class]
+2024-09-06 11:41:21 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, requestLoggingFilter urls=[/*] order=2147483647
+2024-09-06 11:41:21 DEBUG Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+2024-09-06 11:41:21 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06 11:41:21 INFO HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06 11:41:21 INFO HHH000026: Second-level cache disabled
+2024-09-06 11:41:22 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06 11:41:22 WARN HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-06 11:41:23 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06 11:41:23 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:41:23 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-06 11:41:23 TRACE 
+	c.g.B.c.IncidentController:
+	{GET [/getIncident/{id}]}: getIncidentById(Long)
+	{GET [/getIncident]}: getAllIncidents(String,Date,Date)
+	{POST [/addIncident]}: addIncident(Incident)
+	{POST [/updateIncident/{id}]}: updateIncidentById(Long,Incident)
+2024-09-06 11:41:23 TRACE 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-09-06 11:41:23 DEBUG 6 mappings in 'requestMappingHandlerMapping'
+2024-09-06 11:41:23 DEBUG Detected 0 mappings in 'beanNameHandlerMapping'
+2024-09-06 11:41:23 TRACE 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-09-06 11:41:23 TRACE Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-09-06 11:41:23 TRACE Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-06 11:41:23 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-06 11:41:24 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-06 11:41:24 DEBUG ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-06 11:41:24 INFO Tomcat started on port 8080 (http) with context path '/'
+2024-09-06 11:41:24 INFO Started ByteMonkAssignmentApplication in 6.512 seconds (process running for 7.512)
+2024-09-06 11:41:39 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:39 INFO Initializing Servlet 'dispatcherServlet'
+2024-09-06 11:41:39 TRACE Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@436d2bb9
+2024-09-06 11:41:39 TRACE Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@54ddd7e4
+2024-09-06 11:41:39 TRACE Detected org.springframework.web.servlet.theme.FixedThemeResolver@26c1f3eb
+2024-09-06 11:41:39 TRACE Detected DefaultRequestToViewNameTranslator
+2024-09-06 11:41:39 TRACE Detected SessionFlashMapManager
+2024-09-06 11:41:39 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-06 11:41:39 INFO Completed initialization in 3 ms
+2024-09-06 11:41:39 TRACE POST "/addIncident", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:39 TRACE Mapped to com.gaurang.ByteMonk_Assignment.controller.IncidentController#addIncident(Incident)
+2024-09-06 11:41:39 TRACE Read "application/json;charset=UTF-8" to [Incident(id=null, title=to p do owirnv, description=Detected an unauthorized login attempt on the admin panel., incidentDate=Wed Jul 10 05:30:00 IST 2024, severity=HIGH)]
+2024-09-06 11:41:39 TRACE Arguments: [Incident(id=null, title=to p do owirnv, description=Detected an unauthorized login attempt on the admin panel., incidentDate=Wed Jul 10 05:30:00 IST 2024, severity=HIGH)]
+2024-09-06 11:41:39 TRACE Failed to complete request
+java.lang.IllegalArgumentException: Incident date cannot be more than 30 days in the past.
+	at com.gaurang.ByteMonk_Assignment.controller.IncidentController.addIncident(IncidentController.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.gaurang.ByteMonk_Assignment.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 11:41:39 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Incident date cannot be more than 30 days in the past.] with root cause
+java.lang.IllegalArgumentException: Incident date cannot be more than 30 days in the past.
+	at com.gaurang.ByteMonk_Assignment.controller.IncidentController.addIncident(IncidentController.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.gaurang.ByteMonk_Assignment.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 11:41:39 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:39 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:41:39 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:41:39 TRACE Arguments: [org.apache.catalina.core.ApplicationHttpRequest@44fffa6]
+2024-09-06 11:41:39 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:41:39 TRACE Writing [{timestamp=Fri Sep 06 11:41:39 IST 2024, status=500, error=Internal Server Error, path=/addIncident}]
+2024-09-06 11:41:39 TRACE Applying default cacheSeconds=-1
+2024-09-06 11:41:39 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:41:39 DEBUG Exiting from "ERROR" dispatch, status 500, headers={masked}
+2024-09-06 11:41:50 TRACE POST "/addIncident", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:50 TRACE Mapped to com.gaurang.ByteMonk_Assignment.controller.IncidentController#addIncident(Incident)
+2024-09-06 11:41:50 DEBUG Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.gaurang.ByteMonk_Assignment.model.Incident> com.gaurang.ByteMonk_Assignment.controller.IncidentController.addIncident(com.gaurang.ByteMonk_Assignment.model.Incident): JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-9-10": not a valid representation (error: Failed to parse Date value '2024-9-10': Cannot parse date "2024-9-10": while it seems to fit format 'yyyy-MM-dd', parsing fails (leniency? null))
+2024-09-06 11:41:50 WARN Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-9-10": not a valid representation (error: Failed to parse Date value '2024-9-10': Cannot parse date "2024-9-10": while it seems to fit format 'yyyy-MM-dd', parsing fails (leniency? null))]
+2024-09-06 11:41:50 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:41:50 DEBUG Completed 400 BAD_REQUEST, headers={}
+2024-09-06 11:41:50 INFO 0:0:0:0:0:0:0:1 POST /addIncident - 13ms
+2024-09-06 11:41:50 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:50 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:41:50 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:41:50 TRACE Arguments: [org.apache.catalina.core.ApplicationHttpRequest@5ddd35da]
+2024-09-06 11:41:50 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:41:50 TRACE Writing [{timestamp=Fri Sep 06 11:41:50 IST 2024, status=400, error=Bad Request, path=/addIncident}]
+2024-09-06 11:41:50 TRACE Applying default cacheSeconds=-1
+2024-09-06 11:41:50 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:41:50 DEBUG Exiting from "ERROR" dispatch, status 400, headers={masked}
+2024-09-06 11:41:59 TRACE POST "/addIncident", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:59 TRACE Mapped to com.gaurang.ByteMonk_Assignment.controller.IncidentController#addIncident(Incident)
+2024-09-06 11:41:59 TRACE Read "application/json;charset=UTF-8" to [Incident(id=null, title=to p do owirnv, description=Detected an unauthorized login attempt on the admin panel., incidentDate=Tue Sep 10 05:30:00 IST 2024, severity=HIGH)]
+2024-09-06 11:41:59 TRACE Arguments: [Incident(id=null, title=to p do owirnv, description=Detected an unauthorized login attempt on the admin panel., incidentDate=Tue Sep 10 05:30:00 IST 2024, severity=HIGH)]
+2024-09-06 11:41:59 TRACE Failed to complete request
+java.lang.IllegalArgumentException: Incident date cannot be in the future.
+	at com.gaurang.ByteMonk_Assignment.controller.IncidentController.addIncident(IncidentController.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.gaurang.ByteMonk_Assignment.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 11:41:59 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Incident date cannot be in the future.] with root cause
+java.lang.IllegalArgumentException: Incident date cannot be in the future.
+	at com.gaurang.ByteMonk_Assignment.controller.IncidentController.addIncident(IncidentController.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.gaurang.ByteMonk_Assignment.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-09-06 11:41:59 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:41:59 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:41:59 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:41:59 TRACE Arguments: [org.apache.catalina.core.ApplicationHttpRequest@7b41c2eb]
+2024-09-06 11:41:59 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:41:59 TRACE Writing [{timestamp=Fri Sep 06 11:41:59 IST 2024, status=500, error=Internal Server Error, path=/addIncident}]
+2024-09-06 11:41:59 TRACE Applying default cacheSeconds=-1
+2024-09-06 11:41:59 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:41:59 DEBUG Exiting from "ERROR" dispatch, status 500, headers={masked}
+2024-09-06 11:42:39 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:42:39 INFO HikariPool-1 - Shutdown initiated...
+2024-09-06 11:42:39 INFO HikariPool-1 - Shutdown completed.
+2024-09-06 11:49:26 INFO Starting ByteMonkAssignmentApplication using Java 22.0.1 with PID 8568 (C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes started by Asus in C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment)
+2024-09-06 11:49:27 INFO No active profile set, falling back to 1 default profile: "default"
+2024-09-06 11:49:28 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06 11:49:28 INFO Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-09-06 11:49:29 INFO Tomcat initialized with port 8080 (http)
+2024-09-06 11:49:29 INFO Starting service [Tomcat]
+2024-09-06 11:49:29 INFO Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06 11:49:29 INFO Initializing Spring embedded WebApplicationContext
+2024-09-06 11:49:29 INFO Root WebApplicationContext: initialization completed in 2037 ms
+2024-09-06 11:49:29 INFO HikariPool-1 - Starting...
+2024-09-06 11:49:29 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ADMIN
+2024-09-06 11:49:29 INFO HikariPool-1 - Start completed.
+2024-09-06 11:49:29 INFO H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-06 11:49:29 TRACE Added existing Filter initializer bean 'securityFilterChainRegistration'; order=-100, resource=class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]
+2024-09-06 11:49:29 TRACE Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2024-09-06 11:49:29 TRACE Added existing Servlet initializer bean 'h2Console'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]
+2024-09-06 11:49:29 TRACE Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2024-09-06 11:49:29 TRACE Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2024-09-06 11:49:29 TRACE Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2024-09-06 11:49:29 TRACE Created Filter initializer for bean 'requestLoggingFilter'; order=2147483647, resource=file [C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes\com\gaurang\ByteMonk_Assignment\filter\RequestLoggingFilter.class]
+2024-09-06 11:49:29 DEBUG Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, requestLoggingFilter urls=[/*] order=2147483647
+2024-09-06 11:49:29 DEBUG Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+2024-09-06 11:49:29 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06 11:49:29 INFO HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06 11:49:29 INFO HHH000026: Second-level cache disabled
+2024-09-06 11:49:30 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06 11:49:30 WARN HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-06 11:49:31 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06 11:49:31 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:49:32 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-06 11:49:32 INFO Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-09-06 11:49:32 TRACE 
+	c.g.B.c.IncidentController:
+	{POST [/addIncident]}: addIncident(Incident)
+	{POST [/updateIncident/{id}]}: updateIncidentById(Long,Incident)
+	{GET [/getIncident/{id}]}: getIncidentById(Long)
+	{GET [/getIncident]}: getAllIncidents(String,Date,Date)
+2024-09-06 11:49:32 TRACE 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-09-06 11:49:32 DEBUG 6 mappings in 'requestMappingHandlerMapping'
+2024-09-06 11:49:32 DEBUG Detected 0 mappings in 'beanNameHandlerMapping'
+2024-09-06 11:49:32 TRACE 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-09-06 11:49:32 TRACE Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-09-06 11:49:32 TRACE Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-06 11:49:32 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-06 11:49:32 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-06 11:49:32 DEBUG ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-06 11:49:32 INFO Tomcat started on port 8080 (http) with context path '/'
+2024-09-06 11:49:32 INFO Started ByteMonkAssignmentApplication in 6.618 seconds (process running for 7.233)
+2024-09-06 11:50:32 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:50:32 INFO Initializing Servlet 'dispatcherServlet'
+2024-09-06 11:50:32 TRACE Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@6a827b0c
+2024-09-06 11:50:32 TRACE Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@332610ad
+2024-09-06 11:50:32 TRACE Detected org.springframework.web.servlet.theme.FixedThemeResolver@5318731f
+2024-09-06 11:50:32 TRACE Detected DefaultRequestToViewNameTranslator
+2024-09-06 11:50:32 TRACE Detected SessionFlashMapManager
+2024-09-06 11:50:32 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-06 11:50:32 INFO Completed initialization in 3 ms
+2024-09-06 11:50:32 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:50:32 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:50:32 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:50:32 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:50:32 TRACE Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@2635d57c]]]
+2024-09-06 11:50:32 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:50:32 TRACE Writing [{timestamp=Fri Sep 06 11:50:32 IST 2024, status=403, error=Forbidden, path=/addIncident}]
+2024-09-06 11:50:33 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:50:33 DEBUG Exiting from "ERROR" dispatch, status 403, headers={masked}
+2024-09-06 11:51:38 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:51:38 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:51:38 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:51:38 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:51:38 TRACE Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@6d1d4a65]]]
+2024-09-06 11:51:38 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:51:38 TRACE Writing [{timestamp=Fri Sep 06 11:51:38 IST 2024, status=403, error=Forbidden, path=/addIncident}]
+2024-09-06 11:51:38 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:51:38 DEBUG Exiting from "ERROR" dispatch, status 403, headers={masked}
+2024-09-06 11:51:57 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:51:57 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:51:57 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:51:57 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:51:57 TRACE Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@2cea1181]]]
+2024-09-06 11:51:57 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:51:57 TRACE Writing [{timestamp=Fri Sep 06 11:51:57 IST 2024, status=403, error=Forbidden, path=/addIncident}]
+2024-09-06 11:51:57 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:51:57 DEBUG Exiting from "ERROR" dispatch, status 403, headers={masked}
+2024-09-06 11:52:22 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:52:22 TRACE "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:52:22 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:52:22 TRACE Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-06 11:52:22 TRACE Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@647a2bb1]]]
+2024-09-06 11:52:22 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:52:22 TRACE Writing [{timestamp=Fri Sep 06 11:52:22 IST 2024, status=403, error=Forbidden, path=/addIncident}]
+2024-09-06 11:52:22 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:52:22 DEBUG Exiting from "ERROR" dispatch, status 403, headers={masked}
+2024-09-06 11:53:25 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:53:25 INFO HikariPool-1 - Shutdown initiated...
+2024-09-06 11:53:25 INFO HikariPool-1 - Shutdown completed.
+2024-09-06 11:53:29 INFO Starting ByteMonkAssignmentApplication using Java 22.0.1 with PID 21100 (C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes started by Asus in C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment)
+2024-09-06 11:53:30 INFO No active profile set, falling back to 1 default profile: "default"
+2024-09-06 11:53:30 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06 11:53:31 INFO Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-09-06 11:53:31 INFO Tomcat initialized with port 8080 (http)
+2024-09-06 11:53:31 INFO Starting service [Tomcat]
+2024-09-06 11:53:31 INFO Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06 11:53:31 INFO Initializing Spring embedded WebApplicationContext
+2024-09-06 11:53:31 INFO Root WebApplicationContext: initialization completed in 1865 ms
+2024-09-06 11:53:31 INFO HikariPool-1 - Starting...
+2024-09-06 11:53:32 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ADMIN
+2024-09-06 11:53:32 INFO HikariPool-1 - Start completed.
+2024-09-06 11:53:32 INFO H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-06 11:53:32 TRACE Added existing Filter initializer bean 'securityFilterChainRegistration'; order=-100, resource=class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]
+2024-09-06 11:53:32 TRACE Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2024-09-06 11:53:32 TRACE Added existing Servlet initializer bean 'h2Console'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]
+2024-09-06 11:53:32 TRACE Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2024-09-06 11:53:32 TRACE Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2024-09-06 11:53:32 TRACE Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2024-09-06 11:53:32 TRACE Created Filter initializer for bean 'requestLoggingFilter'; order=2147483647, resource=file [C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes\com\gaurang\ByteMonk_Assignment\filter\RequestLoggingFilter.class]
+2024-09-06 11:53:32 DEBUG Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, requestLoggingFilter urls=[/*] order=2147483647
+2024-09-06 11:53:32 DEBUG Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+2024-09-06 11:53:32 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06 11:53:32 INFO HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06 11:53:32 INFO HHH000026: Second-level cache disabled
+2024-09-06 11:53:33 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06 11:53:33 WARN HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-06 11:53:34 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06 11:53:34 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:53:34 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-06 11:53:34 INFO Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-09-06 11:53:35 TRACE 
+	c.g.B.c.IncidentController:
+	{POST [/updateIncident/{id}]}: updateIncidentById(Long,Incident)
+	{GET [/getIncident/{id}]}: getIncidentById(Long)
+	{POST [/addIncident]}: addIncident(Incident)
+	{GET [/getIncident]}: getAllIncidents(String,Date,Date)
+2024-09-06 11:53:35 TRACE 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-09-06 11:53:35 DEBUG 6 mappings in 'requestMappingHandlerMapping'
+2024-09-06 11:53:35 DEBUG Detected 0 mappings in 'beanNameHandlerMapping'
+2024-09-06 11:53:35 TRACE 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-09-06 11:53:35 TRACE Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-09-06 11:53:35 TRACE Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-06 11:53:35 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-06 11:53:35 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-06 11:53:35 DEBUG ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-06 11:53:35 INFO Tomcat started on port 8080 (http) with context path '/'
+2024-09-06 11:53:35 INFO Started ByteMonkAssignmentApplication in 6.259 seconds (process running for 6.765)
+2024-09-06 11:53:44 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:53:44 INFO Initializing Servlet 'dispatcherServlet'
+2024-09-06 11:53:44 TRACE Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@5d94c50e
+2024-09-06 11:53:44 TRACE Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@175c26ff
+2024-09-06 11:53:44 TRACE Detected org.springframework.web.servlet.theme.FixedThemeResolver@5af7e2f
+2024-09-06 11:53:44 TRACE Detected DefaultRequestToViewNameTranslator
+2024-09-06 11:53:44 TRACE Detected SessionFlashMapManager
+2024-09-06 11:53:44 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-06 11:53:44 INFO Completed initialization in 4 ms
+2024-09-06 11:53:44 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:53:52 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:53:55 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:53:58 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:54:09 TRACE GET "/getIncident/4", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:54:09 TRACE Mapped to com.gaurang.ByteMonk_Assignment.controller.IncidentController#getIncidentById(Long)
+2024-09-06 11:54:09 TRACE Arguments: [4]
+2024-09-06 11:54:09 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-06 11:54:09 DEBUG Nothing to write: null body
+2024-09-06 11:54:09 TRACE Applying default cacheSeconds=-1
+2024-09-06 11:54:09 TRACE No view rendering, null ModelAndView returned.
+2024-09-06 11:54:09 DEBUG Completed 404 NOT_FOUND, headers={}
+2024-09-06 11:54:09 INFO 0:0:0:0:0:0:0:1 GET /getIncident/4 - 223ms
+2024-09-06 11:54:45 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:54:45 INFO HikariPool-1 - Shutdown initiated...
+2024-09-06 11:54:45 INFO HikariPool-1 - Shutdown completed.
+2024-09-06 11:54:49 INFO Starting ByteMonkAssignmentApplication using Java 22.0.1 with PID 4508 (C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes started by Asus in C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment)
+2024-09-06 11:54:49 INFO No active profile set, falling back to 1 default profile: "default"
+2024-09-06 11:54:50 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06 11:54:50 INFO Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-09-06 11:54:51 INFO Tomcat initialized with port 8080 (http)
+2024-09-06 11:54:51 INFO Starting service [Tomcat]
+2024-09-06 11:54:51 INFO Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06 11:54:51 INFO Initializing Spring embedded WebApplicationContext
+2024-09-06 11:54:51 INFO Root WebApplicationContext: initialization completed in 1890 ms
+2024-09-06 11:54:51 INFO HikariPool-1 - Starting...
+2024-09-06 11:54:51 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ADMIN
+2024-09-06 11:54:51 INFO HikariPool-1 - Start completed.
+2024-09-06 11:54:51 INFO H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-06 11:54:52 TRACE Added existing Filter initializer bean 'securityFilterChainRegistration'; order=-100, resource=class path resource [org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class]
+2024-09-06 11:54:52 TRACE Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2024-09-06 11:54:52 TRACE Added existing Servlet initializer bean 'h2Console'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]
+2024-09-06 11:54:52 TRACE Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2024-09-06 11:54:52 TRACE Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2024-09-06 11:54:52 TRACE Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2024-09-06 11:54:52 TRACE Created Filter initializer for bean 'requestLoggingFilter'; order=2147483647, resource=file [C:\Users\Asus\Documents\WEB\JAVA_BACKEND\ByteMonk_Assignment\target\classes\com\gaurang\ByteMonk_Assignment\filter\RequestLoggingFilter.class]
+2024-09-06 11:54:52 DEBUG Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, requestLoggingFilter urls=[/*] order=2147483647
+2024-09-06 11:54:52 DEBUG Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+2024-09-06 11:54:52 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06 11:54:52 INFO HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06 11:54:52 INFO HHH000026: Second-level cache disabled
+2024-09-06 11:54:52 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06 11:54:52 WARN HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-06 11:54:53 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06 11:54:53 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:54:54 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-06 11:54:54 INFO Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-09-06 11:54:54 TRACE 
+	c.g.B.c.IncidentController:
+	{POST [/updateIncident/{id}]}: updateIncidentById(Long,Incident)
+	{GET [/getIncident]}: getAllIncidents(String,Date,Date)
+	{GET [/getIncident/{id}]}: getIncidentById(Long)
+	{POST [/addIncident]}: addIncident(Incident)
+2024-09-06 11:54:54 TRACE 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-09-06 11:54:54 DEBUG 6 mappings in 'requestMappingHandlerMapping'
+2024-09-06 11:54:54 DEBUG Detected 0 mappings in 'beanNameHandlerMapping'
+2024-09-06 11:54:54 TRACE 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-09-06 11:54:54 TRACE Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-09-06 11:54:54 TRACE Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-06 11:54:54 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-06 11:54:54 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-06 11:54:54 DEBUG ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-06 11:54:55 INFO Tomcat started on port 8080 (http) with context path '/'
+2024-09-06 11:54:55 INFO Started ByteMonkAssignmentApplication in 6.119 seconds (process running for 6.644)
+2024-09-06 11:55:02 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 11:55:02 INFO Initializing Servlet 'dispatcherServlet'
+2024-09-06 11:55:02 TRACE Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@5d94c50e
+2024-09-06 11:55:02 TRACE Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@175c26ff
+2024-09-06 11:55:02 TRACE Detected org.springframework.web.servlet.theme.FixedThemeResolver@5af7e2f
+2024-09-06 11:55:02 TRACE Detected DefaultRequestToViewNameTranslator
+2024-09-06 11:55:02 TRACE Detected SessionFlashMapManager
+2024-09-06 11:55:02 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-06 11:55:02 INFO Completed initialization in 3 ms
+2024-09-06 11:55:02 TRACE 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-09-06 11:55:19 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06 11:55:19 INFO HikariPool-1 - Shutdown initiated...
+2024-09-06 11:55:19 INFO HikariPool-1 - Shutdown completed.
